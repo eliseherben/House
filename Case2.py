@@ -528,8 +528,8 @@ with tab4:
 
     # Aanpassen van de lay-out
     fig.update_layout(
-        xaxis_title='Straat',
-        yaxis_title='Gemiddelde prijs',
+        xaxis_title='Huis',
+        yaxis_title='Prijs',
         title='Vergelijking tussen 2014 en 2023'
     )
 

@@ -69,7 +69,7 @@ with tab2:
     st.title("Verdeling van huizen in Washington")
 
     st.write(
-    "In deze grafiek wordt de verdeling van de huizen weergegeven. "
+    "In deze kaart wordt de verdeling van de huizen weergegeven. "
     "De lichtblauwe bolletjes vertegenwoordigen de data van de tweede dataframe, "
     "terwijl de donkerblauwe bolletjes de data van de eerste dataframe weergeven. "
     "Op de kaart is te zien dat de huizen zich in de staat Washington bevinden. "
@@ -528,9 +528,9 @@ with tab4:
 
     # Aanpassen van de lay-out
     fig.update_layout(
-        xaxis_title='Address Line 1 / Street',
-        yaxis_title='Gemiddelde waarde',
-        title='Vergelijking tussen Address Line 1 en Street'
+        xaxis_title='Straat',
+        yaxis_title='Gemiddelde prijs',
+        title='Vergelijking tussen 2014 en 2023'
     )
 
     # Toon de figuur

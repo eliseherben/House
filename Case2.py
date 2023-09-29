@@ -39,16 +39,16 @@ with tab1:
     
     st.write("Welkom!")
     
-    st.write("In deze blog willen we je graag meenemen in onze analyse van de datasets die we hebben onderzocht."
+    st.write("In deze blog willen we je graag meenemen in onze analyse van de datasets die we hebben onderzocht. "
              "We hebben ervoor gekozen om de huisprijzen van woningen in King County, USA, te analyseren en met elkaar te vergelijken. "
              "Deze dataset hebben we gevonden op Kaggle als onderdeel van een opdracht aan de HvA voor de minor data science. "
              "We kozen specifiek voor deze datasets omdat ze goed vergelijkbaar zijn en verschillende variabelen bevatten, zoals prijs, aantal slaapkamers, aantal badkamers, woonoppervlakte en meer. "
              "We geloven dat dit ons in staat stelt om een grondige analyse en vergelijking te maken op basis van deze data. "
-             "Aanvankelijk hadden we overwogen om een soortgelijke analyse te doen voor Parijs, maar na nader onderzoek hebben we besloten om daarvan af te zien, omdat de beschikbare dataset fictief bleek te zijn en niet betrouwbaar was.")
+             "Aanvankelijk hadden we overwogen om een soortgelijke analyse te doen voor Parijs, maar na nader onderzoek hebben we besloten om daarvan af te zien, omdat de beschikbare dataset fictief bleek te zijn en niet betrouwbaar was. ")
 
-    st.write("Hier zijn enkele stappen die we  overwegen bij het analyseren van deze dataset over huisprijzen in King County, USA:")
-    st.write("- Data Verkenning: Begin van het verkennen van de dataset. Bekijk de beschikbare kolommen en begrijp de betekenis van elke variabele. Controleer ook op ontbrekende waarden of ongeldige gegevens.")
-    st.write("- Data Visualisatie: Maak grafieken en visualisaties om de verdeling van huisprijzen en andere belangrijke kenmerken te begrijpen. Dit kan histogrammen, scatterplots en boxplots omvatten.")
+    st.write("Hier zijn enkele stappen die we  overwegen bij het analyseren van deze dataset over huisprijzen in King County, USA: ")
+    st.write("- Data Verkenning: Begin van het verkennen van de dataset. Bekijk de beschikbare kolommen en begrijp de betekenis van elke variabele. Controleer ook op ontbrekende waarden of ongeldige gegevens. ")
+    st.write("- Data Visualisatie: Maak grafieken en visualisaties om de verdeling van huisprijzen en andere belangrijke kenmerken te begrijpen. Dit kan histogrammen, scatterplots en boxplots omvatten. ")
     st.write("- Statistische Analyse: Voer statistische analyses uit om de relaties tussen verschillende variabelen te begrijpen. Dit kan correlatie-analyse en regressie-analyse omvatten. ")
 
 
@@ -69,14 +69,14 @@ with tab2:
     st.title("Verdeling van huizen in Washington")
 
     st.write(
-    "In deze grafiek wordt de verdeling van de huizen weergegeven."
-    " De lichtblauwe bolletjes vertegenwoordigen de data van de tweede dataframe,"
-    " terwijl de donkerblauwe bolletjes de data van de eerste dataframe weergeven."
-    " Op de kaart is te zien dat de huizen zich in de staat Washington bevinden."
-    " Er zijn meerdere lichtblauwe bolletjes zichtbaar, omdat de data in deze dataframe gedetailleerder was."
-    " Hierbij was de exacte locatie van de huizen bekend."
-    " Voor de andere dataframe hebben we postcodes gebruikt om de locaties vast te leggen."
-    " Hiervoor hebben we extra kolommen toegevoegd om de locatie te berekenen op basis van de postcodes."
+    "In deze grafiek wordt de verdeling van de huizen weergegeven. "
+    "De lichtblauwe bolletjes vertegenwoordigen de data van de tweede dataframe, "
+    "terwijl de donkerblauwe bolletjes de data van de eerste dataframe weergeven. "
+    "Op de kaart is te zien dat de huizen zich in de staat Washington bevinden. "
+    "Er zijn meerdere lichtblauwe bolletjes zichtbaar, omdat de data in deze dataframe gedetailleerder was. "
+    "Hierbij was de exacte locatie van de huizen bekend. "
+    "Voor de andere dataframe hebben we postcodes gebruikt om de locaties vast te leggen. "
+    "Hiervoor hebben we extra kolommen toegevoegd om de locatie te berekenen op basis van de postcodes. "
     )
 
 
@@ -125,11 +125,11 @@ with tab2:
     st.title("Gemiddelde Huisprijzen per Jaar")
 
     st.write(
-        "In de volgende grafiek zijn de gemiddelde huisprijzen per jaar te zien."
-        " Hierbij zijn beide dataframes in één grafiek samengevoegd."
-        " Via de dropdown-box kan er een stad worden geselecteerd om naar te kijken."
-        " Er is alleen gefilterd op steden die in beide dataframes voorkomen."
-        " Voor de tweede dataframe is er een kolom toegevoegd om de locatie om te zetten naar de desbetreffende stad."
+        "In de volgende grafiek zijn de gemiddelde huisprijzen per jaar te zien. "
+        "Hierbij zijn beide dataframes in één grafiek samengevoegd. "
+        "Via de dropdown-box kan er een stad worden geselecteerd om naar te kijken. "
+        "Er is alleen gefilterd op steden die in beide dataframes voorkomen. "
+        "Voor de tweede dataframe is er een kolom toegevoegd om de locatie om te zetten naar de desbetreffende stad. "
     )
 
 
@@ -178,11 +178,11 @@ with tab2:
     st.title("Prijs versus Bouwjaar van Huizen")
 
     st.write(
-        "In de volgende grafiek is de prijs tegenover het bouwjaar van huizen geplaatst."
-        " Er is onderscheid gemaakt tussen gerenoveerde en niet-gerenoveerde huizen."
-        " Een checkbox is toegevoegd waarmee je de grafiek met of zonder uitschieters (uitbijters) kunt bekijken."
-        " In de legenda wordt aangegeven welke kleur wordt gebruikt voor gerenoveerde en niet-gerenoveerde huizen."
-        " Met de dropdown-box kun je de gewenste dataset kiezen."
+        "In de volgende grafiek is de prijs tegenover het bouwjaar van huizen geplaatst. "
+        "Er is onderscheid gemaakt tussen gerenoveerde en niet-gerenoveerde huizen. "
+        "Een checkbox is toegevoegd waarmee je de grafiek met of zonder uitschieters (uitbijters) kunt bekijken. "
+        "In de legenda wordt aangegeven welke kleur wordt gebruikt voor gerenoveerde en niet-gerenoveerde huizen. "
+        "Met de dropdown-box kun je de gewenste dataset kiezen. "
     )
 
 
@@ -246,18 +246,18 @@ with tab3:
     # Titel
     st.title("Correlatietabel voor 'Price' vs Andere Variabelen")
 
-    st.write("In de onderstaande tabel is de correlatie weergeven van price met de andere variabelen uit de twee datasets."
-             "Door gebruik te maken van de dropdownmenu kan er gewisseld worden van dataset."
-             "Met het vinkje wordt aangegeven of je de uitbijters wilt zien of niet."
-             "Er is ook nog een extra variabele gecreëerd, namelijk 'aantal kamers'. Dit is de som van het aantal slaapkamers en badkamers plus de woonkamer.")
+    st.write("In de onderstaande tabel is de correlatie weergeven van price met de andere variabelen uit de twee datasets. "
+             "Door gebruik te maken van de dropdownmenu kan er gewisseld worden van dataset. "
+             "Met het vinkje wordt aangegeven of je de uitbijters wilt zien of niet. "
+             "Er is ook nog een extra variabele gecreëerd, namelijk 'aantal kamers'. Dit is de som van het aantal slaapkamers en badkamers plus de woonkamer. ")
     
-    st.write("Zoals te zien is, wordt bij het verwijderen van de uitbijters bij dataset 1 de correlatie tussen price en de andere variabelen sterker."
-             "Dit houdt in dat de uitbijters afwijken van de algemene trend van de data en een negatieve correlatie veroorzaken."
-             "Bij dataset 2 wordt de correlatie juist zwakker bij het verwijderen van uitbijters."
-             "Dit houdt in dat de uitbijters een duidelijke lineaire relatie hebben met de rest van de data."
-             "Bij beide datasets heeft 'sqft_living' de hoogste positieve correlatie."
-             "Dit houdt in dat hoe groter de oppervlakte van de woonkamer is, hoe hoger de prijs zou zijn."
-             "We verwachten dan ook dat 'sqft_living' de beste variabele is om te voorspellen bij lineaire regressie.")
+    st.write("Zoals te zien is, wordt bij het verwijderen van de uitbijters bij dataset 1 de correlatie tussen price en de andere variabelen sterker. "
+             "Dit houdt in dat de uitbijters afwijken van de algemene trend van de data en een negatieve correlatie veroorzaken. "
+             "Bij dataset 2 wordt de correlatie juist zwakker bij het verwijderen van uitbijters. "
+             "Dit houdt in dat de uitbijters een duidelijke lineaire relatie hebben met de rest van de data. "
+             "Bij beide datasets heeft 'sqft_living' de hoogste positieve correlatie. "
+             "Dit houdt in dat hoe groter de oppervlakte van de woonkamer is, hoe hoger de prijs zou zijn. "
+             "We verwachten dan ook dat 'sqft_living' de beste variabele is om te voorspellen bij lineaire regressie. ")
 
 
 # In[193]:
@@ -362,21 +362,21 @@ with tab3:
     # Titel
     st.title("Regressie")
 
-    st.write("In de onderstaande grafiek is een scatterplot weergegeven met een regressielijn."
-             "Door middel van het dropdownmenu kan er een variabele geselecteerd worden om te vergelijken met de variabele 'price'."
-             "Door gebruik te maken van het tweede dropdownmenu kan er gewisseld worden tussen datasets en kun je de regressielijnen vergelijken tussen de verschillende datasets."
-             "Tenslotte kun je ook de invloed van uitbijters vergelijken door regressie door uitbijters aan of uit te zetten.")
+    st.write("In de onderstaande grafiek is een scatterplot weergegeven met een regressielijn. "
+             "Door middel van het dropdownmenu kan er een variabele geselecteerd worden om te vergelijken met de variabele 'price'. "
+             "Door gebruik te maken van het tweede dropdownmenu kan er gewisseld worden tussen datasets en kun je de regressielijnen vergelijken tussen de verschillende datasets. "
+             "Tenslotte kun je ook de invloed van uitbijters vergelijken door regressie door uitbijters aan of uit te zetten. ")
              
-    st.write("In beide datasets is te zien dat de variabele 'sqft_living' de beste R2-score geeft."
-             "Dit was te verwachten aangezien deze variabele ook de grootste correlatie had met 'price'."
-             "Echter valt wel op dat als je uitbijters weghaalt bij dataset 1, de R2-score verbetert."
-             "Maar dit is niet het geval bij dataset 2; als je hier de uitbijters weghaalt, wordt de R2-score slechter."
-             "Dit komt doordat uitbijters de schattingen van de modelparameters (hellingen) beïnvloeden."
-             "Verder kunnen uitbijters de voorspellende waarde van het model verminderen doordat ze ver weg van de andere datapunten liggen."
-             "Tenslotte beïnvloedt het de heteroscedasticiteit, ook wel de spreiding van de data.")
+    st.write("In beide datasets is te zien dat de variabele 'sqft_living' de beste R2-score geeft. "
+             "Dit was te verwachten aangezien deze variabele ook de grootste correlatie had met 'price'. "
+             "Echter valt wel op dat als je uitbijters weghaalt bij dataset 1, de R2-score verbetert. "
+             "Maar dit is niet het geval bij dataset 2; als je hier de uitbijters weghaalt, wordt de R2-score slechter. "
+             "Dit komt doordat uitbijters de schattingen van de modelparameters (hellingen) beïnvloeden. "
+             "Verder kunnen uitbijters de voorspellende waarde van het model verminderen doordat ze ver weg van de andere datapunten liggen. "
+             "Tenslotte beïnvloedt het de heteroscedasticiteit, ook wel de spreiding van de data. ")
     
-    st.write("In een vervolgonderzoek kan de regressie nog verbeterd worden door de data te normaliseren."
-             "Dit kan onder andere door transformaties toe te passen waardoor de data normaal verdeeld wordt.")
+    st.write("In een vervolgonderzoek kan de regressie nog verbeterd worden door de data te normaliseren. "
+             "Dit kan onder andere door transformaties toe te passen waardoor de data normaal verdeeld wordt. ")
 
 
 # In[195]:
@@ -466,24 +466,24 @@ with tab4:
 
     st.write("Om de verkregen data te toetsen, hebben we gebruik gemaakt van een API. " 
              "Deze aanpak stelt ons in staat om de huidige data te valideren via een externe bron genaamd 'ATTOM'. "
-             "ATTOM is een service die vastgoedinformatie in Amerika bijhoudt en biedt een openbare API die we in dit blog hebben gebruikt.")
+             "ATTOM is een service die vastgoedinformatie in Amerika bijhoudt en biedt een openbare API die we in dit blog hebben gebruikt. ")
 
     st.write("Het gebruik van de API vereist het verkrijgen van een 'API-Key', een virtuele sleutel die nodig is voor toegang tot de ATTOM API. "
              "Om een API-Key te verkrijgen, moet je een account aanmaken bij ATTOM. "
              "Zodra het account is aangemaakt, begint een proefperiode van een maand waarin je toegang krijgt tot de API. "
-             "Het API-gebruik verloopt als volgt:")
+             "Het API-gebruik verloopt als volgt: ")
 
     st.write("- Allereerst wordt er een verbinding gemaakt met de API, waardoor je toegang krijgt tot een virtuele 'voordeur'. "
-             "Om deze 'voordeur' te passeren, heb je de eerder genoemde API-Key nodig.")
+             "Om deze 'voordeur' te passeren, heb je de eerder genoemde API-Key nodig. ")
 
     st.write("- Vervolgens kun je een verzoek ('request') naar de API sturen. "
              "Dit vereist een verbinding, een URL en een header. "
-             "De verbinding is al tot stand gebracht in de vorige stap, de URL geeft aan welke specifieke gegevens worden opgevraagd, en de header geeft aan in welk formaat de gegevens samen met de API-Key voor controle moeten worden verzonden.")
+             "De verbinding is al tot stand gebracht in de vorige stap, de URL geeft aan welke specifieke gegevens worden opgevraagd, en de header geeft aan in welk formaat de gegevens samen met de API-Key voor controle moeten worden verzonden. ")
 
-    st.write("- Als dit succesvol is, ontvang je een respons ('response'), dat zijn de opgevraagde gegevens.")
+    st.write("- Als dit succesvol is, ontvang je een respons ('response'), dat zijn de opgevraagde gegevens. ")
 
     st.write("- De laatste stap is om de gegevens in een pandas dataframe te plaatsen. "
-             "Een gedetailleerde uitleg van dit proces is te vinden in de code.")
+             "Een gedetailleerde uitleg van dit proces is te vinden in de code. ")
 
 
 # In[196]:
